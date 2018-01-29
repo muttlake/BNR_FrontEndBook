@@ -133,3 +133,26 @@ a {
   left: 4px;
 
 }
+
+@media all and (orientation: landscape) {
+  /* Styles to go here */
+  .main-content {
+    flex-direction: row;
+    overflow: hidden;
+  }
+
+  .thumbnail-list {
+    flex-direction: column;
+    order: 0;
+    margin-left: 20px;
+  }
+
+  .thumbnail-item {
+    max-width: 260px;
+  }
+
+  .thumbnail-item + .thumbnail-item {
+    margin-top: 20px;
+  }
+
+}
